@@ -7,7 +7,7 @@ def display_image():
     k = cv.waitKey(0)
 
 def disp_real_time_video():
-    cap = cv.VideoCapture(0)
+    cap = cv.VideoCapture(2)
 
     if not cap.isOpened():
         print("Error could not open webcam")
@@ -24,6 +24,11 @@ def disp_real_time_video():
         # Press 'q' to quit the video window
         if cv.waitKey(1) & 0xFF == ord('q'):
             break
+        if cv.waitKey(1) & 0xFF == ord('1'):
+            cap = cv.VideoCapture(1)
+        if cv.waitKey(1) & 0xFF == ord('2'):
+            cap = cv.VideoCapture(2)
+
 
     cap.release()
     cv.destroyAllWindows()
