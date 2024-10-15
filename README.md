@@ -1,5 +1,5 @@
 # ObjectDetection
-A shy start to learning to use OpenCV and TensorFlow.
+A shy start to learning to use OpenCV, TensorFlow and other fun stuff
 
 ## Tried so far
 - [x] Simple opencv implementation in sandbox
